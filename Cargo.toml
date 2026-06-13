@@ -1,0 +1,16 @@
+[package]
+name = "macronx-tui"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "macronx-tui"
+path = "src/main.rs"
+
+[dependencies]
+ratatui   = "0.28"
+crossterm = "0.28"
+reqwest   = { version = "0.12", features = ["blocking", "json"] }
+serde     = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow    = "1"
