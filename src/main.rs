@@ -18,7 +18,7 @@ use app::App;
 use config::Config;
 
 fn main() -> anyhow::Result<()> {
-    let config = Config::from_env();
+    let config = Config::from_env()?;
     let mut app = App::new(config);
 
     // Load inboxes on startup
